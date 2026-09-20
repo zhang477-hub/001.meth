@@ -1,0 +1,30 @@
+# 大数据
+*.bam
+*.fastq.gz
+*.fq.gz
+*.vcf.gz
+*.idat
+*.rds
+*.RData
+*.h5
+*.h5ad
+*.bigwig
+*.bw
+
+# 服务器数据目录（如果本地有）
+data/
+results/
+logs/
+tmp/
+
+# 环境
+__pycache__/
+.ipynb_checkpoints/
+.Rproj.user
+
+# 敏感
+.env
+*.key
+*.pem
+*password*
+*token*
