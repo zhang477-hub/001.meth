@@ -1,4 +1,4 @@
-# 大数据
+
 *.bam
 *.fastq.gz
 *.fq.gz
@@ -11,18 +11,15 @@
 *.bigwig
 *.bw
 
-# 服务器数据目录（如果本地有）
 data/
 results/
 logs/
 tmp/
 
-# 环境
 __pycache__/
 .ipynb_checkpoints/
 .Rproj.user
 
-# 敏感
 .env
 *.key
 *.pem
