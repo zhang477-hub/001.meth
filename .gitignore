@@ -1,4 +1,23 @@
 
+01.docs/00_admin/
+01.docs/03_report/
+01.docs/02_sop/
+
+02.data/test/
+02.data/idat/
+02.data/raw/
+02.data/trimmed/
+02.data/metadata/
+
+04.results/
+
+
+05.maniscript/
+
+
+paper/
+
+
 *.bam
 *.fastq.gz
 *.fq.gz
@@ -11,17 +30,19 @@
 *.bigwig
 *.bw
 
-data/
-results/
-logs/
-tmp/
 
 __pycache__/
 .ipynb_checkpoints/
 .Rproj.user
+.Rhistory
+
 
 .env
 *.key
 *.pem
 *password*
 *token*
+
+
+*.old
+*.tmp
