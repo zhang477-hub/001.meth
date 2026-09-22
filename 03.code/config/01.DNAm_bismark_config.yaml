@@ -1,0 +1,27 @@
+paths:
+  raw_dir: "/dat01/zhangyuxin/01-rawdata/08-wgbs"
+  result_dir: "/dat01/zhangyuxin/02-result/08-wgbs"
+  trimmed_dir: "/dat01/zhangyuxin/02-result/08-wgbs/01_trim"
+  bismark_dir: "/dat01/zhangyuxin/02-result/08-wgbs/02_bismark"
+  dedup_dir: "/dat01/zhangyuxin/02-result/08-wgbs/03_dedup"
+  methyl_dir: "/dat01/zhangyuxin/02-result/08-wgbs/04_methylation"
+  report_dir: "/dat01/zhangyuxin/02-result/08-wgbs/05_report"
+  logs_dir: "/dat01/zhangyuxin/02-result/08-wgbs/logs"
+  genome: "/dat01/zhangyuxin/02-result/08-wgbs/ref/genome"
+
+trim:
+  length: 50
+  quality: 30
+  threads: 8
+
+bismark:
+  threads: 8
+  extra: "-N 1 -L 28"
+
+dedup:
+  threads: 4
+
+extract:
+  threads: 4
+  comprehensive: true
+  cytosine_report: true
