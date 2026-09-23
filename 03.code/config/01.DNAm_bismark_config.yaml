@@ -1,27 +1,22 @@
 paths:
-  raw_dir: "/dat01/zhangyuxin/01-rawdata/08-wgbs"
-  result_dir: "/dat01/zhangyuxin/02-result/08-wgbs"
-  trimmed_dir: "/dat01/zhangyuxin/02-result/08-wgbs/01_trim"
-  bismark_dir: "/dat01/zhangyuxin/02-result/08-wgbs/02_bismark"
-  dedup_dir: "/dat01/zhangyuxin/02-result/08-wgbs/03_dedup"
-  methyl_dir: "/dat01/zhangyuxin/02-result/08-wgbs/04_methylation"
-  report_dir: "/dat01/zhangyuxin/02-result/08-wgbs/05_report"
-  logs_dir: "/dat01/zhangyuxin/02-result/08-wgbs/logs"
-  genome: "/dat01/zhangyuxin/02-result/08-wgbs/ref/genome"
+  raw_dir:     "/data/home/quj_lab/zhangyuxin/01-project/001.meth/02.data/X101SC26072106-Z02-F006/01.RawData"
+  trim_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/01_trim"
+  map_dir:     "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02_map/"
+  unique_dir:  "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03_unique"
+  meth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/04_meth"
+  logs_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/logs"
+  genome:      "/data/home/quj_lab/zhangyuxin/03-database/hg38_lambda/index/bismark_index"
 
 trim:
   length: 50
   quality: 30
-  threads: 8
 
-bismark:
-  threads: 8
-  extra: "-N 1 -L 28"
+map:
+  threads: 20
 
-dedup:
-  threads: 4
+unique:
+  threads: 24
 
-extract:
-  threads: 4
-  comprehensive: true
-  cytosine_report: true
+meth:
+  threads: 20
+  buffer_size: "10G"

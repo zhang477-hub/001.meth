@@ -9,12 +9,13 @@ set -euo pipefail
 
 RAW_DIR=$1
 SAMPLE=$2
-OUTDIR=$3
+OUTBASE=$3
 THREADS=${4:-8}
 LENGTH=${5:-50}
 QUALITY=${6:-30}
 LOGDIR=${7:-${OUTDIR}/logs}
 
+OUTDIR="${OUTBASE}/${SAMPLE}"
 mkdir -p "$OUTDIR" "$LOGDIR"
 
 LOG="${LOGDIR}/${SAMPLE}_trim_galore.log"
