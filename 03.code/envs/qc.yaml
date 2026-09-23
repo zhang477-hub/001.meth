@@ -1,0 +1,7 @@
+name: qc
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - trim-galore
+prefix: /data/home/quj_lab/zhangyuxin/anaconda3/envs/qc

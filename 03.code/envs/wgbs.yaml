@@ -1,0 +1,9 @@
+name: wgbs
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - bowtie2
+  - samtools
+  - bismark
+prefix: /data/home/quj_lab/zhangyuxin/anaconda3/envs/wgbs
