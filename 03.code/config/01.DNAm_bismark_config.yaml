@@ -4,6 +4,8 @@ paths:
   map_dir:     "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02_map/"
   unique_dir:  "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03_unique"
   meth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/04_meth"
+  hmeth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/04_meth"
+  qc_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/05_qc"
   logs_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/logs"
   genome:      "/data/home/quj_lab/zhangyuxin/03-database/hg38_lambda/index/bismark_index"
 

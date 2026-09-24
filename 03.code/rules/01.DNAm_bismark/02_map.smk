@@ -12,9 +12,6 @@ rule bismark_map:
         mem_mb = 64000,
         runtime = 2880
     conda:
-        "03.code/envs/wgbs.yaml"
+        "/data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/envs/wgbs.yaml"
     shell:
-        "bash /data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/scripts/01.DNAm_bismark/02_map.sh "
-        "{config[paths][trim_dir]} {wildcards.sample} "
-        "{config[paths][map_dir]} "
-        "{params.genome} {threads} {params.logdir}"
+        "source /data/home/quj_lab/zhangyuxin/anaconda3/etc/profile.d/conda.sh && conda run -n wgbs bash /data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/scripts/01.DNAm_bismark/02_map.sh {config[paths][trim_dir]} {wildcards.sample} {config[paths][map_dir]} {params.genome} {threads} {params.logdir}"

@@ -11,10 +11,5 @@ rule extract_meth:
     resources:
         mem_mb = 64000,
         runtime = 2880
-    conda:
-        "03.code/envs/wgbs.yaml"
     shell:
-        "bash /data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/scripts/01.DNAm_bismark/04_meth.sh "
-        "{config[paths][unique_dir]} {wildcards.sample} "
-        "{config[paths][meth_dir]} "
-        "{params.genome} {threads} {params.logdir}"
+      "source /data/home/quj_lab/zhangyuxin/anaconda3/etc/profile.d/conda.sh && conda run -n wgbs bash /data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/scripts/01.DNAm_bismark/04_meth.sh {config[paths][unique_dir]} {wildcards.sample} {config[paths][meth_dir]} {params.genome} {threads} {params.logdir}"
