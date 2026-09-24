@@ -1,32 +1,44 @@
-## 20260922
+## 20260923
 
 #### To do
-- [ ] 写代码03.code/scripts/01.DNAm_bismark
+- [x] 写代码03.code/scripts/01.DNAm_bismark，整理01_trim.sh，02_map.sh，03_unique，04_meth.sh
+- [x] 测试这些代码，输出在04.results/debug/bat/
 
 #### code
-- 03.code/scripts/01_qc/01_read_idat.R
-- 03.code/rules/01_qc.smk
+- 03.code/scripts/01.DNAm_bismark/01_trim.sh
+- 03.code/scripts/01.DNAm_bismark/02_map.sh
+- 03.code/scripts/01.DNAm_bismark/03_unique.sh
+- 03.code/scripts/01.DNAm_bismark/04_meth.sh
+- 03.code/rules/01.DNAm_bismark/01_trim.smk
+- 03.code/rules/01.DNAm_bismark/02_map.smk
+- 03.code/rules/01.DNAm_bismark/03_unique.smk
+- 03.code/rules/01.DNAm_bismark/04_meth.smk
+- 03.code/config/01.DNAm_bismark_config.yaml
 
-#### patra
-- detection_pval = 0.01
-- logFC_cutoff = 0.1
-
-#### input
-- 02.data/idat/
-- 02.data/ref/sample_sheet.csv
-
-#### output
-- 04.results/qc/rgset.RData
-- 04.results/qc/rgset_qc.pdf
-
-#### figure/tables
-- 04.results/figures/volcano.pdf ← 03.code/scripts/05_plot/volcano.R
-
-#### tissue
-- read.metharray.exp 报错，路径问题，已解决
+#### para
+- trim: length: 50 quality: 30
+- map：threads: 20
+- unique： threads: 24
+- meth：threads: 20，buffer_size: "10G"
 
 #### Git
-- commit: feat: 完成IDAT读取脚本
+- commit: feat: 完成rules,config写作
 
-#### tommorow
-- 写 normalize 脚本
+## 20260924
+
+#### To do
+- [x] 测试 Snakemake dry run，写配置脚本
+- [x] 写质控分析代码
+
+#### code
+- 03.code/scripts/run_snakemake_pbs.sh
+- `03.code/scripts/01.DNAm_bismark/05_mapping_qc.sh`
+- `03.code/scripts/01.DNAm_bismark/05_methylation_qc.sh`
+- `03.code/scripts/01.DNAm_bismark/05_hmethylation_qc.sh`
+- `03.code/rules/01.DNAm_bismark/05_qc.smk`
+
+
+
+#### Git
+- commit: feat: 完成QC脚本
+
