@@ -4,4 +4,5 @@ channels:
 dependencies:
   - python=3.9
   - trim-galore
+  - seqkit
 prefix: /data/home/quj_lab/zhangyuxin/anaconda3/envs/qc

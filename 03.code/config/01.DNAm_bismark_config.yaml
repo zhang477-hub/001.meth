@@ -22,3 +22,9 @@ unique:
 meth:
   threads: 20
   buffer_size: "10G"
+  
+qc:
+  r1_suffix:      "_R1.fq.gz"
+  r2_suffix:      "_R2.fq.gz"
+  trim_r1_suffix: "_R1_val_1.fq.gz"
+  trim_r2_suffix: "_R2_val_2.fq.gz"
