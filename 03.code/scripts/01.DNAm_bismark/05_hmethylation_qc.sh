@@ -5,7 +5,7 @@
 # usage£º05_hmethylation_qc.sh <map_dir> <hmeth_dir> <outdir> <logdir>
 # author:zhangyuxin,20260924
 
-set -euo pipefail
+set -uo pipefail
 
 MAP_DIR=$1
 HMETH_DIR=$2

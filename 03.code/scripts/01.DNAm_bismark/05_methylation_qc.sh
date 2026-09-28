@@ -5,7 +5,7 @@
 # usage£º05_methylation_qc.sh <map_dir> <meth_dir> <outdir> <logdir>
 # author:zhangyuxin,20260924
 
-set -euo pipefail
+set -uo pipefail
 
 MAP_DIR=$1
 METH_DIR=$2
