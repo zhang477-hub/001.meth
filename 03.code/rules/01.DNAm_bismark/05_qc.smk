@@ -96,7 +96,7 @@ rule fastq_qc:
     threads: 4
     resources:
         mem_mb = 4000,
-        runtime = 300
+        runtime = 2880
     shell:
         "source /data/home/quj_lab/zhangyuxin/anaconda3/etc/profile.d/conda.sh && "
         "conda run -n qc bash /data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/scripts/01.DNAm_bismark/05_fastq_qc.sh "

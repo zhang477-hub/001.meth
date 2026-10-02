@@ -10,7 +10,7 @@ rule bismark_map:
     threads: config["map"]["threads"]
     resources:
         mem_mb = 64000,
-        runtime = 2880
+        runtime = 5760
     conda:
         "/data/home/quj_lab/zhangyuxin/01-project/001.meth/03.code/envs/wgbs.yaml"
     shell:

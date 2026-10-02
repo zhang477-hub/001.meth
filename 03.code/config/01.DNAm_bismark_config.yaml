@@ -1,12 +1,13 @@
 paths:
-  raw_dir: "/data/home/quj_lab/zhangyuxin/01-project/001.meth/02.data/raw/PM-XS01KF2026080384-02/PM-XS01KF2026080384-02/Rawdata/PM-XS01KF2026080384-02/ANNO_XS01KF2026080384_PM-XS01KF2026080384-02/Rawdata"
-  trim_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/01_trim"
-  map_dir:     "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/02_map/"
-  unique_dir:  "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/03_unique"
-  meth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/04_meth"
-  hmeth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/04_meth"
-  qc_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/05_qc"
-  logs_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/02.lun-spl-ves/logs"
+  raw_dir: "/data/home/quj_lab/zhangyuxin/01-project/001.meth/02.data/raw/PM-XS01KF2026080384-03/PM-XS01KF2026080384-03/Rawdata/PM-XS01KF2026080384-03/ANNO_XS01KF2026080384_PM-XS01KF2026080384-03/Rawdata/"
+  trim_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/01_trim"
+  map_dir:     "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/02_map/"
+  unique_dir:  "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/03_unique"
+  meth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/04_meth"
+  hmeth_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/04_meth"
+  qc_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/05_qc"
+  mlml_dir:      "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/06_mlml"
+  logs_dir:    "/data/home/quj_lab/zhangyuxin/01-project/001.meth/04.results/01_DNAm_bismark/03.ski-WbcH/logs"
   genome:      "/data/home/quj_lab/zhangyuxin/03-database/hg38_lambda/index/bismark_index"
 
 trim:
@@ -14,13 +15,13 @@ trim:
   quality: 30
 
 map:
-  threads: 20
+  threads: 8
 
 unique:
-  threads: 24
+  threads: 12
 
 meth:
-  threads: 20
+  threads: 12
   buffer_size: "10G"
   
 qc:

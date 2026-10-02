@@ -1,0 +1,6 @@
+name: R4.4
+channels:
+  - defaults
+dependencies:
+  - r-base=4.4.1
+prefix: /data/home/quj_lab/zhangyuxin/anaconda3/envs/R4.4
